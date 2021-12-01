@@ -66,4 +66,17 @@ RSpec.describe Calculator do
       expect(result).to eq(-3)
     end  
   end 
+
+  describe '#divide' do 
+    it 'should return the quotient of two numbers' do 
+      calculator = Calculator.new
+      result = calculator.divide(6,2)
+      expect(result).to eq(3)
+    end
+    it 'should work with negative numbers' do
+      calculator = Calculator.new
+      result = calculator.divide(10,-2)
+      expect(result).to eq(-5)
+    end
+  end
 end
