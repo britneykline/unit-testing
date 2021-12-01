@@ -92,4 +92,12 @@ RSpec.describe Calculator do
       expect(result).to eq(36)
     end
   end
+
+  describe '#power' do 
+    it 'should return a number raised by an exponent' do 
+      calculator = Calculator.new
+      result = calculator.power(2,3)
+      expect(result).to eq(8)
+    end
+  end
 end
